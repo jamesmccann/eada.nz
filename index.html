@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>EADA Architects</title>
+
+    <style>
+      body {
+        margin: 0;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .image-container {
+        width: 416px;
+        max-width: 80vw;
+        margin-top: calc((100vh - 80px - 416px) / 2);
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .contact {
+        width: 180px;
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 900;
+        color: #1a1a1a;
+      }
+
+      .contact address a {
+        text-decoration: none;
+        color: #1a1a1a;
+      }
+
+      .contact address p {
+        font-style: normal;
+        margin: 0 0 5px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 180px;
+      }
+
+      @media (min-width: 701px) {
+        body {
+          display: block;
+          min-height: 100vh;
+          position: relative;
+        }
+        .image-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 416px;
+          max-width: none;
+          margin-top: 0;
+        }
+        .contact {
+          position: absolute;
+          bottom: 60px;
+          right: 80px;
+          width: 180px;
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .image-container {
+          width: 100%;
+        }
+        .contact {
+          width: 50vw;
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        .contact svg {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <a href="https://www.instagram.com/eada.architects">
+        <img
+          src="output-400w.jpg"
+          srcset="
+            output-400w.jpg   400w,
+            output-800w.jpg   800w,
+            output-1200w.jpg 1200w
+          "
+          sizes="400px"
+          alt="EADA Architecture"
+        />
+      </a>
+    </div>
+
+    <div class="contact">
+      <address>
+        <p>
+          <span>E</span><span>A</span><span>D</span><span>A</span><span> </span
+          ><span>a</span><span>r</span><span>c</span><span>h</span><span>i</span
+          ><span>t</span><span>e</span><span>c</span><span>t</span
+          ><span>s</span>
+        </p>
+        <a href="mailto:info@eada.co.nz">
+          <p>
+            <span>i</span><span>n</span><span>f</span><span>o</span
+            ><span>@</span><span>e</span><span>a</span><span>d</span
+            ><span>a</span><span>.</span><span>c</span><span>o</span
+            ><span>.</span><span>n</span><span>z</span>
+          </p>
+        </a>
+        <p>
+          <span>+</span><span>6</span><span>4</span><span> </span><span>2</span
+          ><span>2</span><span> </span><span>5</span><span>5</span><span>5</span
+          ><span> </span><span>2</span><span>3</span><span>7</span
+          ><span>5</span>
+        </p>
+      </address>
+    </div>
+  </body>
+</html>
